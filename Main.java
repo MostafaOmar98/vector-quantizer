@@ -1,4 +1,3 @@
-import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -43,18 +42,10 @@ public class Main {
 
 //        System.out.println();
 //        System.out.println();
-//        int[] vectorDim = {10, 2};
-//        VectorQuantizerController v = new VectorQuantizerController(16, vectorDim);
-//        v.compress("D:\\mtest\\r2.jpg", "D:\\mtest\\compressed.bekh");
-//        v.decompress("D:\\mtest\\compressed.bekh", "D:\\mtest\\output.jpg");
-
-        SwingUtilities.invokeLater(new Runnable(){
-            @Override
-            public void run() {
-                new MainFrame("Vector Quantizer");
-            }
-        });
-
+        int[] vectorDim = {10, 2};
+        VectorQuantizerController v = new VectorQuantizerController(16, vectorDim);
+        v.compress("D:\\mtest\\r2.jpg", "D:\\mtest\\compressed.bekh");
+        v.decompress("D:\\mtest\\compressed.bekh", "D:\\mtest\\output.jpg");
 
     }
 }
