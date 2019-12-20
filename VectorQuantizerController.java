@@ -20,7 +20,7 @@ public class VectorQuantizerController {
         enc.encode(img, compressedPath);
     }
 
-    public void decompress(String compressedPath, String imagePath)
+    public static void decompress(String compressedPath, String imagePath)
     {
         Decoder dec = new Decoder(compressedPath);
         int[][] img = dec.decode();
